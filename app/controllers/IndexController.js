@@ -1,13 +1,3 @@
-var MongoClient = require('mongodb').MongoClient;
- 
-var myCollection;
-var db = MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
-    if(err)
-        throw err;
-    console.log("connected to the mongoDB !");
-    myCollection = db.collection('nickname');
-});
-
 module.exports = function( app ) {
     var controller = {
     
@@ -28,12 +18,7 @@ module.exports = function( app ) {
 				"nome" : nome
 			});
 			
-			myCollection.insert({nome: nome}, function(err, result) {
-            if(err)
-                throw err;
-         
-            console.log("********* " + nome + ", salvo com sucesso!!! *********");
-        });  
+			
 		},
 		
 		direcionarSomar : function(request, response){
@@ -81,6 +66,112 @@ module.exports = function( app ) {
 			response.render( "multiplicar" , {
 				"resultado" : resultado
 			});
+		},
+		
+		soma100aoValor : function(num1){
+			var novoValor = Number(num1);
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			novoValor += 1;
+			
+			return novoValor;
 		},
 		
 		multiplicar2Num : function(num1,num2){

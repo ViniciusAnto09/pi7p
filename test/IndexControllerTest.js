@@ -105,4 +105,12 @@ describe("IndexController", function() {
 		expect(retorno).toEqual(esperado);
 	});
 	
+	//Teste Soma 100
+	it("Soma 100 ao numero", function() {
+		var retorno = IndexController.soma100aoValor(1);
+		var esperado = 101;
+		
+		expect(retorno).toEqual(esperado);
+	});
+	
 });
