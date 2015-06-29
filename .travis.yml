@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "0.12.4"
+deploy:
+  provider: heroku
+  api_key:
+    secure: 4099b2bb-c329-4fda-871d-bc7515a30ccd
+  app: node-pi-7pn
+  on:
+    repo: ViniciusAnto09/pi7p
+
+before_script: chmod 0777 ./node_modules/.bin/mocha
