@@ -51,11 +51,6 @@
 
 	<div id="conteudo">
 
-		<form action="meuNome" method="POST">
-			<input name="nome" placeholder="Digite seu nome aqui" type="text"/>
-			<input type="submit" value="Salvar"/>
-		</form>
-
 		<h1>
 			My Names is
 		<% 
@@ -64,11 +59,18 @@
 					, <%= nome %>! 
 				<% } %>
 		%>
+				
 		</h1>
 	   
-	   	<img src="http://imageshack.com/a/img540/6954/z3V13h.gif"/> 
+	   	
 
+	<form action="meuNome" method="POST">
+	
+			<img src="http://imageshack.com/a/img540/6954/z3V13h.gif"/> 
 
+			<input name="nome" placeholder="Digite seu nome aqui" type="text"/>
+			<input type="submit" value="Salvar"/>
+		</form>
 	
 	</div>
 	<div id="menu">
@@ -77,6 +79,7 @@
 		<li><a href="/subtrair">Subtrair - </a></li>
 		<li><a href="/multiplicar">Multiplicar * </a></li>
 		<li><a href="/dividir">Dividir / </a></li>
+		<li><a href="/somar100aoValor">Somar +100 </a></li>
 	  </ul>
 	</div>
 

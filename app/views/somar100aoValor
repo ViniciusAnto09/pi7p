@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="estilo.css">
+  	<title>Somar 100 ao Total</title>
+</head>
+<body>
+	<form action="somar100aoValor" method="POST">
+		<label> Numero 1</label>
+		<input name="num1" type="text" />
+		
+		<input type="submit" value="Somar 100 ao Total" />
+		
+		<p><% if(locals.resultado){%> Valor Total  <%= resultado%> <%}%></p>
+	</form>
+</body>
+</html>

@@ -106,7 +106,7 @@ describe("IndexController", function() {
 	});
 	
 	//Teste Soma 100
-	it("Soma 100 ao numero", function() {
+	it("Soma 100 ao numero 1", function() {
 		var retorno = IndexController.soma100aoValor(1);
 		var esperado = 101;
 		

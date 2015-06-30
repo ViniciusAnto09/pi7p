@@ -23,4 +23,8 @@ module.exports = function( app ) {
 	app.route("/dividir")
 		.get(controller.direcionarDividir)
 		.post(controller.dividir);
+	
+	app.route("/somar100aoValor")
+		.get(controller.direcionarSomar100aoValor)
+		.post(controller.somar100aoValor);
 };
