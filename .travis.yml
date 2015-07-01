@@ -3,7 +3,6 @@ node_js:
   - "0.12.4"
 service_name: travis
 repo_token: 7xhkKoRiqizBLObXmi2ZXoMuIwPFka1P1
-
 deploy:
   provider: heroku
   api_key:
@@ -11,7 +10,5 @@ deploy:
   app: node-pi-7pn
   on:
     repo: ViniciusAnto09/pi7p
-	
-
 
 before_script: chmod 0777 ./node_modules/.bin/mocha
