@@ -113,4 +113,12 @@ describe("IndexController", function() {
 		expect(retorno).toEqual(esperado);
 	});
 	
+	//Teste Diminuir 100
+	it("Diminui 100 do numero 200", function() {
+		var retorno = IndexController.diminuir100aoValor(200);
+		var esperado = 100;
+		
+		expect(retorno).toEqual(esperado);
+	});
+	
 });

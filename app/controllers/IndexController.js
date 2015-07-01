@@ -207,6 +207,125 @@ module.exports = function( app ) {
 			return novoValor;
 		},
 		
+		direcionarDiminuir100aoValor : function(request, response){
+			response.render("diminuir100aoValor");
+		},
+		
+		diminuir100 : function(	request, response ){	
+			var num1 = parseInt(request.body.num1);
+			var resultado = controller.diminuir100aoValor(num1);
+			response.render( "diminuir100aoValor" , {
+				"resultado" : resultado
+			});
+		},
+		
+		diminuir100aoValor : function(num1){
+			var novoValor = Number(num1);
+			
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			novoValor -= 1;
+			
+			return novoValor;
+			
+		},
 	};
     
     return controller;

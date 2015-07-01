@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="estilo.css">
+  	<title>Diminuir 100 ao Total</title>
+</head>
+<body>
+	<form action="diminuir100aoValor" method="POST">
+		<label> Numero 1</label>
+		<input name="num1" type="text" />
+		
+		<input type="submit" value="Diminuir 100 ao Total" />
+		
+		<p><% if(locals.resultado){%> Valor Total  <%= resultado%> <%}%></p>
+	</form>
+</body>
+</html>

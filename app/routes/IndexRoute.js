@@ -27,4 +27,8 @@ module.exports = function( app ) {
 	app.route("/somar100aoValor")
 		.get(controller.direcionarSomar100aoValor)
 		.post(controller.somar100);
+	
+	app.route("/diminuir100aoValor")
+		.get(controller.direcionarDiminuir100aoValor)
+		.post(controller.diminuir100);
 };
