@@ -26,5 +26,5 @@ module.exports = function( app ) {
 	
 	app.route("/somar100aoValor")
 		.get(controller.direcionarSomar100aoValor)
-		.post(controller.somar100aoValor);
+		.post(controller.somar100);
 };

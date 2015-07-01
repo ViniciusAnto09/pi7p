@@ -13,9 +13,9 @@
 		<label> Numero 2</label>
 		<input name="num2" type="text" />
 		<br />
-		<input type="submit" value="Multiplicar" />
+		<input type="submit" id="multiplicar" value="Multiplicar" />
 		
-		<p><% if(locals.resultado){%> Valor Total  <%= resultado%> <%}%></p>
+		<p id="resultado">  <% if(locals.resultado){%> Valor Total  <%= resultado%> <%}%></p>
 	</form>
 </body>
 </html>
